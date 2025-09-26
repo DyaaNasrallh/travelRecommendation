@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    color: white;
+    background-color: rgb(31, 28, 28);
+    
+    display: flex;
+   width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    box-sizing: border-box; 
+
+}
+nav ul{
+    display: flex;
+    align-items: center;
+
+}
+nav li{
+display: flex;
+justify-content: space-around;
+padding: 10px;
+}
+#searchBar{
+    display: flex;
+    justify-content: space-between;
+   border: 1px;
+  height: 40px;
+  width: fit-content;
+   background-color: white;
+   border-radius: 20px;
+}
+#searchBar button{
+    border: 0;
+    background-color: rgb(5, 114, 116);
+    color: white;
+    padding: 7px;
+    border-radius: 10px;
+    width: 75px;
+
+}
+#searchBar input{
+    border: none;
+    outline: none;
+    padding: 7px;
+    width: 200px;
+
+  
+}
+
+#searchBar input::placeholder{
+    color:rgb(5, 114, 116); 
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+a:hover{
+   color: rgb(5, 114, 116); 
+}
+#searchBar i {
+  
+position:relative;
+padding-top: 7px;
+  color:rgb(5, 114, 116);
+}
+nav h2{
+    font-style: italic;
+    
+}
+#searchBar button:hover{
+color: black;
+}
+body{
+    
+    min-height: 100vh;
+  background: 
+    linear-gradient(to right, rgba(5, 114, 116, 0.753), rgba(5, 114, 116, 0)), 
+    url('f8698cf6c609f04cc6498b9e7a183fa8.jpg') no-repeat center center/cover; 
+     background-attachment: fixed;
+}
+#link{
+    display: flex;
+    
+}
+#link li{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+#contaner{
+  
+   height: 100vh;
+    display: grid;
+    grid-template-columns: 150px 1fr 1fr;
+    grid-template-rows: 1fr 10px 1fr;
+ 
+    
+}
+#linkSocialMedia{
+    grid-row: 3/4;
+    grid-column: 1/2;
+}
+#content{
+    grid-row: 1/4;
+    grid-column: 2/3;
+    align-self: center;
+    color: white;
+    
+}
+#linkSocialMedia i{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+#content h1{
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+#content p{
+    margin: 5px 0 30px 0;
+}
+#content button{
+     border: 0;
+    background-color: rgba(5, 114, 116, 0.501);
+    color: white;
+    padding: 7px;
+    border-radius: 10px;
+    width: 130px;
+
+
+}
+.line {
+    grid-row: 1/2;
+    grid-column: 1/2;
+  width: 1px;              
+  height: 200px;           
+  background-color: white; 
+  align-self: center;
+  margin-left: 10px;
+}
+#content button:hover{
+    color: black;
+}
+#aboutContent{
+grid-row: 1/2;
+grid-column: 2/4;
+padding-top: 50px;
+color: white;
+justify-content: end;
+}
+#ourTeam{
+    grid-row: 3/4;
+    grid-column: 2/4;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    
+    margin-right: 50px;
+    margin-top: 70px;
+    margin-left: 50px;
+    width: 970px;
+
+    
+}
+#aboutContent h1{
+    font-size: 50px;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+#aboutContent p{
+    background-color: rgba(0, 0, 0, 0.43);
+    width: fit-content;
+    padding: 20px;
+    margin-right:50px;
+    border-radius: 10px;
+}
+#ourTeam h1{
+    font-size: 50px;
+    font-weight: bold;
+}
+section{
+    background-color:rgba(0, 0, 0, 0.43) ;
+    padding: 10px;
+    height: fit-content;
+   width: 150px;
+   border-radius: 10px;
+}
+section h4{
+    font-weight: bold;
+    margin: 8px;
+   
+}
+section p{
+    color: rgba(255, 255, 255, 0.395);
+     
+     margin: 8px;
+    
+}
+section div{
+    padding: 3px 50px 3px 50px;
+    border-radius: 10px;
+    background-color: rgb(10, 10, 114);
+    width: fit-content;
+    justify-self: center;
+
+}
+#formUser{
+    grid-column: 3/4;
+    grid-row: 1/4;
+    margin-top: 25%;
+    display: flex;
+    flex-direction: column;
+    background-color:rgba(0, 0, 0, 0.43) ;
+    height: 400px;
+    padding: 10px;
+    justify-content: space-between;
+    color: white;
+    margin-right: 30px;
+}
+#formUser textarea{
+    height: 200px;
+    background-color:rgba(0, 0, 0, 0.43) ;
+    border-radius: 5px;
+    color: white;
+   
+}
+#formUser input{
+     background-color:rgba(0, 0, 0, 0.43) ;
+    border-radius: 5px;
+    color: white;
+}
+#formUser button{
+    border: 0;
+    background-color: rgba(5, 114, 116, 0.501);
+    color: white;
+    border-radius: 10px;
+    height: 30px;
+    font-weight: bolder;
+}
+#contaner h1{
+    grid-row: 2/3;
+    grid-column: 2/3;
+    align-self: flex-end;
+    font-size: 50px;
+    color: white;
+    
+}
+#displayReco{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    grid-row: 1/4;
+    grid-column: 3/4;
+    justify-self: end;
+}
+#displayReco img{
+    width: 400px;
+    height: 300px;
+}
+#displayReco div{
+    width: 400px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px;
+}
+
