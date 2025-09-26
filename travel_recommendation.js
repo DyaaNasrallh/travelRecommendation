@@ -9,7 +9,19 @@ fetch(url)
 .then(response=>response.json())
 .then(data=>{
     for(let key in data){
-        if(key.slice(0,-1).toLocaleLowerCase()===keyW){
+        var w=key.trim();
+        
+        if(key.endsWith('ies')){
+            w=key.slice(0,-3);
+        }
+        else if(key.endsWith('es')){
+             w=key.slice(0,-2);
+        }
+        else if(key.endsWith('e')){
+            w=key.slice(0,-1);
+        }
+        
+        if(w.toLocaleLowerCase()===keyW){
             console.log(key);
             for(var i=0;i<data[key].length;i++){
    
@@ -23,16 +35,28 @@ fetch(url)
     
    
 }
+const r="sddsf";
+r.split()
 console.log(nam);
 });}
 function keyword(){
     const search=document.getElementById('search').value;
-    word=search.toLowerCase();
+    word=search.toLowerCase().trim();
    document.getElementById('search').value="";
-   
-  if (word.endsWith("s")) {
+   if (word.endsWith("ies")) {
+    return word.slice(0, -3); 
+  }
+    if (word.endsWith("es")) {
+    return word.slice(0, -2); 
+  }
+  if (word.endsWith("e")) {
     return word.slice(0, -1); 
   }
+  if(word.endsWith('y')){
+    return word.slice(0,-1);
+  }
+ 
+  
 
   return word;
 }
